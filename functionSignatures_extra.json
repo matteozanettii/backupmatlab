@@ -1,0 +1,9 @@
+{
+  "_schemaVersion": "1.0.0",
+  "myFunc": {
+    "inputs": [
+      {"name":"in1","kind":"required","type":["numeric"],"purpose":"ID"},
+      {"name":"Mode","kind":"namevalue","type":["char","choices={'fast','accurate'}"],"purpose":"Operation mode"}
+    ]
+  }
+}

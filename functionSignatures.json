@@ -1,0 +1,45 @@
+{
+  "_schemaVersion": "1.0.0",
+
+  "Corrcdf3D": {
+    
+    "inputs": [
+      {
+        "name":"Rho",
+        "kind":"required",
+        "type":"double",
+        "purpose":"Correlation coefficient"
+      },
+      {
+        "name":"n",
+        "kind":"required",
+        "type":"double",
+        "purpose":"Sample size"
+      },
+      {
+        "name":"rlow",
+        "kind":"positional",
+        "type":"double",
+        "purpose":"Rho lower bound"
+      },
+      {
+        "name":"rup",
+        "kind":"positional",
+        "type":"double",
+        "purpose":"Rho upper bound"
+      }
+    ],
+    
+    "outputs": [
+      {
+        "name":"pippo",
+        "type":"double"
+      },
+      {
+        "name":"info",
+        "type":"struct"
+      }
+    ]
+
+  }
+}

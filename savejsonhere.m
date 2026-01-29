@@ -53,7 +53,8 @@ function out = prettyjson(in)
         if isempty(ln), lines{i} = ''; continue; end
         if startsWith(ln,'}') || startsWith(ln,']'), level = max(level-1,0); end
         lines{i} = [repmat('  ',1,level) ln];
-        if endsWith(ln,'{') || endsWith(ln,'['), level = level + 1; end
+        if endsWith(ln,'{') || endsWith(ln,'['), level = level + 1; 
+        end
     end
     out = strjoin(lines,char(10));
 end
